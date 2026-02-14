@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1d1d1d;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header .logo p {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.intro h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    
+}
+.service-item1 {
+    background-image: url('universe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    }
+
+    .service-item1:hover {
+      animation: scrollBackground 4s ease-in-out infinite alternate;
+    }
+    @keyframes scrollBackground {
+      from {
+        background-position: top;
+      }
+      to {
+        background-position: bottom;
+      }
+    }
+    
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-item {
+   
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
